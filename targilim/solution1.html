@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>strings</title>
+</head>
+
+<body>
+    <hr>
+       <p><input type="text" id="text_id" > <button onclick="pushButton()">length ?</button></p>
+       <p id="result"></p>
+    <script>
+        // 2
+        // input type text 
+        // button
+        // when clicking the button:
+        //   use onclick + function
+        //   print the length of the string inside the input type text
+        //   hint: document.getElementById.val
+        function pushButton() {
+            //document.write()
+            len = document.getElementById('text_id').value.length
+            document.getElementById('result').innerHTML = `length = ${len}`
+        }
+
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>

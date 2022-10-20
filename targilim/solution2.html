@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>strings</title>
+</head>
+
+<body>
+    <hr>
+    <p>phrase: <input type="text" id="text_id" > 
+       length? <input type="number" id="len_id" >
+      <button onclick="pushButton()">check if length is correct</button></p>
+    <span id="correct_id" style="color:green"></span>
+    <span id="wrong_id" style="color:red"></span>
+    <script>
+        // 2.1 
+        // add another input type number
+        // button 
+        // when clicking the button:
+        // use onclick + function
+        //   if the length of the string inside the input type text
+        //     is equal to the number in the input type number
+        //     print in green -- correct
+        //     else print in red -- wrong
+        //     hint: document.getElementById.val        
+
+       //document.write(`<span style="color:green"> Correct </span>`)
+
+       function pushButton() {
+            //document.write()
+            const correct_len = document.getElementById('text_id').value.length
+            const user_len = parseInt(document.getElementById('len_id').value)
+            if (correct_len == user_len) {
+                document.getElementById('correct_id').innerHTML = `Correct`
+                document.getElementById('wrong_id').innerHTML = ``
+            }
+            else {
+                document.getElementById('correct_id').innerHTML = ``
+                document.getElementById('wrong_id').innerHTML = `Wrong`
+            }
+        }       
+        
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
