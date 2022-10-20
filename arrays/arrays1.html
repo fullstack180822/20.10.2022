@@ -8,12 +8,50 @@
 <body>
     <hr>
     <script>
-        // prompt names from the user 
-        // insert the names into a list (hint: push)
-        // until the user enters 'done'
+        // 1
+        // while loop which prompt names from the user 
+        //   insert the names into a list (hint: push)
+        //   until the user enters 'done'
         // print all the items in the list (without done)
 
-        // *bonus:
+        const list_of_names = []
+        while (true) {
+            let name = prompt('enter your name(done to exit): ')
+            if (name === 'done') {
+                break
+            }
+            list_of_names.push(name)
+        }
+        document.write(list_of_names);
+
+        // 2
+        // input type text 
+        // button
+        // when clicking the button:
+        //   use onclick + function
+        //   print the length of the string inside the input type text
+        //   hint: document.getElementById.val
+
+        // 2.1 
+        // add another input type number
+        // button 
+        // when clicking the button:
+        // use onclick + function
+        //   if the length of the string inside the input type text
+        //     is equal to the number in the input type number
+        //     print in green -- correct
+        //     else print in red -- wrong
+        //     hint: document.getElementById.val        
+
+        // 3
+        // new 
+        // input type text 
+        // select -- push, pop, shift, unshift
+        // button will do the action
+        // button2 will print the list
+
+        // **
+        // *major bonus:
         // create HTML page
         // start: [text box 1]
         // end:   [text box 2]
